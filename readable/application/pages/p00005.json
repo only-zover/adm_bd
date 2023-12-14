@@ -1,0 +1,329 @@
+{
+  "id":"5"
+ ,"Identification":{
+    "Name":"Bloquear usu\u00E1rio"
+   ,"Alias":"BLOQUEAR-USUARIO"
+   ,"Title":"Bloqueando usu\u00E1rio"
+   ,"Page Group":"Modais (128800547338567542)"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Attributes":[
+      "draggable:false"
+    ]
+   ,"Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Page Items":[
+    {
+      "id":"643104295700477561"
+     ,"Identification":{
+        "Name":"P5_USUARIO"
+       ,"Type":"Lista de Sele\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Usu\u00E1rio"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "A\u00E7\u00E3o da P\u00E1gina na Sele\u00E7\u00E3o":"None"
+       ,"Permitir Sele\u00E7\u00E3o M\u00FAltipla":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (122777734067045010)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+         ,"margin-bottom-md"
+        ]
+       ,"Icon":"fa-lg fa-user"
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"SELECT username u, username a\nFROM dba_users\nWHERE default_tablespace = \u0027SDE_DATA\u0027\nORDER BY 1;"
+       ,"Display Extra Values":false
+       ,"Display Null Value":true
+       ,"Null Display Value":"-- SELECIONAR USU\u00C1RIO --"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"122453229772405327"
+     ,"Identification":{
+        "Button Name":"DESBLOQUEAR"
+       ,"Label":"Desbloquear"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillStart"
+         ,"t-Button--stretch"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"122453641230405327"
+     ,"Identification":{
+        "Button Name":"BLOQUEAR"
+       ,"Label":"Bloquear"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillStart"
+         ,"t-Button--stretch"
+         ,"t-Button--gapTop"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"122454012844405328"
+     ,"Identification":{
+        "Button Name":"CANCELAR"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillEnd"
+         ,"t-Button--stretch"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":false
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"122455688047405330"
+     ,"Identification":{
+        "Name":"Voltar"
+      }
+     ,"Execution":{
+        "Sequence":70
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCELAR (122454012844405328)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"122456164564405330"
+         ,"Identification":{
+            "Action":"Fechar Caixa de Di\u00E1logo"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Voltar (122455688047405330)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"122454884827405329"
+     ,"Identification":{
+        "Name":"Bloquear usu\u00E1rio"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"-- Declara\u00E7\u00E3o das vari\u00E1veis locais\nDECLARE\n    v_status VARCHAR2(20);       -- Armazena o status da opera\u00E7\u00E3o (SUCESSO ou ERRO)\n    v_mensagem VARCHAR2(4000);   -- Armazena mensagens informativas ou de erro\n    v_acao VARCHAR2(20);        -- Armazena a a\u00E7\u00E3o sendo executada\nBEGIN\n    v_acao := \u0027Bloquear usu\u00E1rio\u0027; -- Define a a\u00E7\u00E3o como \"Bloquear usu\u00E1rio\"\n    \n    -- Registra uma entrada de log informando a tentativa de bloqueio do usu\u00E1rio\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de bloqueio do usu\u00E1rio \u0027 || \u0027\"\u0027 || UPPER(:P5_USUARIO) || \u0027\"\u0027));\n    \n    -- Bloco aninhado para tentar executar a fun\u00E7\u00E3o \"bloquear_usuario\"\n    BEGIN\n        pk_gis.bloquear_usuario(:P5_USUARIO); -- Chama a fun\u00E7\u00E3o para bloquear o usu\u00E1rio\n        \n        v_status := \u0027SUCESSO\u0027;              -- Define o status como \"SUCESSO\" em caso de sucesso\n        v_mensagem := \u0027Usu\u00E1rio bloqueado com sucesso.\u0027; -- Define a mensagem de sucesso\n    EXCEPTION\n        WHEN OTHERS THEN\n            v_status := \u0027ERRO\u0027;  -- Define o status como \"ERRO\" em caso de erro\n            v_mensagem := \u0027Erro: \u0027 || SQLERRM; -- Captura a mensagem de erro do Oracle\n            \n            -- Registra uma entrada de log informando o erro\n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            \n            RAISE;  -- Releva a exce\u00E7\u00E3o para que ela seja tratada fora do bloco aninhado\n    END;\n\n    -- Registra uma entrada de log para informar o resultado da a\u00E7\u00E3o (SUCESSO ou ERRO)\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;\n"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Usu\u00E1rio \u0026P5_USUARIO. bloqueado com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"Erro: n\u00E3o foi poss\u00EDvel bloquear o usu\u00E1rio \u0026P5_USUARIO.."
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"BLOQUEAR (122453641230405327)"
+      }
+    }
+   ,{
+      "id":"122455216199405329"
+     ,"Identification":{
+        "Name":"Desbloquear usu\u00E1rio"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_acao VARCHAR2(20);\nBEGIN\n    v_acao := \u0027Desbloquear usu\u00E1rio\u0027;\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de desbloqueio do usu\u00E1rio \u0027 || \u0027\"\u0027 || UPPER(:P5_USUARIO) || \u0027\"\u0027));\n    \n    BEGIN\n        pk_gis.desbloquear_usuario(:P5_USUARIO);\n        \n        -- Se o desbloqueio do usu\u00E1rio for bem-sucedida, define o status como \u0027SUCESSO\u0027 e registra uma mensagem de sucesso\n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Usu\u00E1rio desbloqueado com sucesso.\u0027;\n    EXCEPTION\n        WHEN OTHERS THEN\n            -- Define o status como \u0027ERRO\u0027 e registra uma mensagem de erro com a descri\u00E7\u00E3o do erro SQL\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro: \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            \n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Usu\u00E1rio \u0026P5_USUARIO. desbloqueado com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"Erro: n\u00E3o foi poss\u00EDvel desbloquear o usu\u00E1rio \u0026P5_USUARIO.."
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"DESBLOQUEAR (122453229772405327)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"122456605926405330"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:2:\u0026SESSION.::\u0026DEBUG.:2::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"2"
+         ,"Clear Cache":"2"
+        }
+      }
+    }
+  ]
+}

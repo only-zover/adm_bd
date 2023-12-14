@@ -1,0 +1,52 @@
+[
+  {
+    "id":"122889177684045127"
+   ,"Identification":{
+      "File Name":"icons\/app-icon-32.png"
+    }
+   ,"Attributes":{
+      "Mime Type":"image\/png"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+ ,{
+    "id":"122889489747045130"
+   ,"Identification":{
+      "File Name":"icons\/app-icon-144-rounded.png"
+    }
+   ,"Attributes":{
+      "Mime Type":"image\/png"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+ ,{
+    "id":"122889781920045130"
+   ,"Identification":{
+      "File Name":"icons\/app-icon-192.png"
+    }
+   ,"Attributes":{
+      "Mime Type":"image\/png"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+ ,{
+    "id":"122890021683045130"
+   ,"Identification":{
+      "File Name":"icons\/app-icon-256-rounded.png"
+    }
+   ,"Attributes":{
+      "Mime Type":"image\/png"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+ ,{
+    "id":"122890329593045131"
+   ,"Identification":{
+      "File Name":"icons\/app-icon-512.png"
+    }
+   ,"Attributes":{
+      "Mime Type":"image\/png"
+     ,"File Character Set":"Unicode UTF-8"
+    }
+  }
+]

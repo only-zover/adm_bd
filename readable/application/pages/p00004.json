@@ -1,0 +1,520 @@
+{
+  "id":"4"
+ ,"Identification":{
+    "Name":"Criar usu\u00E1rio"
+   ,"Alias":"CRIAR-USUARIO"
+   ,"Title":"Criando novo usu\u00E1rio"
+   ,"Page Group":"Modais (128800547338567542)"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Attributes":[
+      "draggable:false"
+    ]
+   ,"Chained":false
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"JavaScript":{
+    "Function and Global Variable Declaration":"apex.jQuery(apex.gPageContext$).on(\"apexpagesubmit\", function() {\n    const item = apex.item(\"P2_USUARIO\");\n    item.setValue(item.getValue().replace(\u0027.\u0027, \u0027\u0027));\n});"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Page Items":[
+    {
+      "id":"233602389449220562"
+     ,"Identification":{
+        "Name":"P4_EMAIL"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Email"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"E-Mail"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":true
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-envelope-o"
+       ,"Width":30
+       ,"Value Placeholder":"email@londrina.pr.gov.br"
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"@londrina.pr.gov.br"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"429338655143222871"
+     ,"Identification":{
+        "Name":"P4_USUARIO"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Usu\u00E1rio"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":false
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-user"
+       ,"Width":30
+       ,"Value Placeholder":"Nome de usu\u00E1rio"
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"429338895817222873"
+     ,"Identification":{
+        "Name":"P4_SENHA"
+       ,"Type":"Oculto"
+      }
+     ,"Settings":{
+        "Valor Protegido":false
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"122444302854384233"
+     ,"Identification":{
+        "Button Name":"CRIAR"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillStart"
+         ,"t-Button--stretch"
+         ,"t-Button--gapTop"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL INSERT action"
+      }
+    }
+   ,{
+      "id":"122444730761384234"
+     ,"Identification":{
+        "Button Name":"CANCELAR"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillEnd"
+         ,"t-Button--stretch"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":false
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"122448354347384251"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":50
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCELAR (122444730761384234)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"122448818668384253"
+         ,"Identification":{
+            "Action":"Fechar Caixa de Di\u00E1logo"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Fechar modal (122448354347384251)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"122449287535384253"
+     ,"Identification":{
+        "Name":"Gerar senha"
+      }
+     ,"Execution":{
+        "Sequence":70
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CRIAR (122444302854384233)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"122449739725384254"
+         ,"Identification":{
+            "Action":"Definir Valor"
+          }
+         ,"Settings":{
+            "Definir Tipo":"JavaScript Expression"
+           ,"Express\u00E3o JavaScript":"Math.random().toString(36).slice(-10);"
+           ,"Suprimir Evento de Altera\u00E7\u00E3o":false
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P4_SENHA"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Gerar senha (122449287535384253)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"122450133884384254"
+     ,"Identification":{
+        "Name":"Escrever e-mail no input"
+      }
+     ,"Execution":{
+        "Sequence":60
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.KEYUP"
+       ,"Selection Type":"Item(s)"
+       ,"Item(s)":[
+          "P4_USUARIO"
+        ]
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"122450698892384254"
+         ,"Identification":{
+            "Action":"Definir Valor"
+          }
+         ,"Settings":{
+            "Definir Tipo":"JavaScript Expression"
+           ,"Express\u00E3o JavaScript":"apex.item(\u0027P4_USUARIO\u0027).getValue() + \u0027@londrina.pr.gov.br\u0027"
+           ,"Suprimir Evento de Altera\u00E7\u00E3o":true
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P4_EMAIL"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Escrever e-mail no input (122450133884384254)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+      ]
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"122446224028384246"
+     ,"Identification":{
+        "Name":"Se usu\u00E1rio existe"
+      }
+     ,"Execution":{
+        "Sequence":20
+      }
+     ,"Validation":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"SELECT null\nFROM dba_users\nWHERE username = UPPER(:P4_USUARIO);"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Esse usu\u00E1rio j\u00E1 existe."
+       ,"Display Location":"Inline with Field"
+       ,"Associated Item":"P4_USUARIO (429338655143222871)"
+      }
+    }
+   ,{
+      "id":"123521381390624535"
+     ,"Identification":{
+        "Name":"Letras e n\u00FAmeros"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"Item is alphanumeric"
+       ,"Item":"P4_USUARIO"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Apenas letras e n\u00FAmeros."
+       ,"Display Location":"Inline with Field"
+       ,"Associated Item":"P4_USUARIO (429338655143222871)"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"122446938521384248"
+     ,"Identification":{
+        "Name":"Criar usu\u00E1rio"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_acao VARCHAR2(20);\nBEGIN\n    v_acao := \u0027Criar usu\u00E1rio\u0027;\n    -- Registra um log da tentativa de cria\u00E7\u00E3o do usu\u00E1rio\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de cria\u00E7\u00E3o do usu\u00E1rio \u0027 || \u0027\"\u0027 || UPPER(:P4_USUARIO) || \u0027\"\u0027 || \u0027. E-mail: \u0027 || :P4_EMAIL));\n    \n    BEGIN\n        pk_gis.criar_usuario(:P4_USUARIO, :P4_SENHA);\n        \n        -- Se a cria\u00E7\u00E3o do usu\u00E1rio for bem-sucedida, define o status como \u0027SUCESSO\u0027 e registra uma mensagem de sucesso\n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Usu\u00E1rio criado com sucesso. E-mail enviado para: \u0027 || :P4_EMAIL;\n    EXCEPTION\n        WHEN OTHERS THEN\n            -- Define o status como \u0027ERRO\u0027 e registra uma mensagem de erro com a descri\u00E7\u00E3o do erro SQL\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro: \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            \n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;\n"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Usu\u00E1rio \u0026P4_USUARIO. criado com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"Erro: N\u00E3o foi poss\u00EDvel criar o usu\u00E1rio.\n\nDetalhes: #SQLERRM_TEXT#"
+       ,"Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"122447338674384248"
+     ,"Identification":{
+        "Name":"Enviar e-mail"
+       ,"Type":"Enviar E-mail"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "De":"Nao responda esta mensagem \u003Cnoreply@londrina.pr.gov.br\u003E"
+       ,"Para":"\u0026P4_EMAIL."
+       ,"Modelo de E-mail":"Email novo usuario (126978849031588198)"
+       ,"Valores de Placeholder":"{\"USUARIO\":\"\u0026P4_USUARIO.\",\"SENHA\":\"\u0026P4_SENHA.\"}"
+       ,"Enviar Imediatamente":true
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"E-mail enviado com sucesso para #TO#."
+      }
+     ,"Error":{
+        "Error Message":"Erro: n\u00E3o foi poss\u00EDvel enviar o e-mail.\n\nDetalhes: #SQLERRM_TEXT#"
+       ,"Display Location":"Inline in Notification"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"122451194253384255"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:2:\u0026SESSION.::\u0026DEBUG.:4::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"2"
+         ,"Clear Cache":"4"
+        }
+      }
+    }
+  ]
+}

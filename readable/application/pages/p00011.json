@@ -1,0 +1,401 @@
+{
+  "id":"11"
+ ,"Identification":{
+    "Name":"Role para role"
+   ,"Alias":"ROLE-PARA-ROLE"
+   ,"Title":"Role para role"
+   ,"Page Group":"Modais (128800547338567542)"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Attributes":[
+      "draggable:false"
+    ]
+   ,"Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Comments":{
+    "Comments":"Provavelmente essa p\u00E1gina ser\u00E1 totalmente alterada"
+  }
+ ,"Page Items":[
+    {
+      "id":"123520066113624522"
+     ,"Identification":{
+        "Name":"P11_ROLE_ATRIBUIDA"
+       ,"Type":"Lista de Sele\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Role a ser atribuida"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "A\u00E7\u00E3o da P\u00E1gina na Sele\u00E7\u00E3o":"None"
+       ,"Permitir Sele\u00E7\u00E3o M\u00FAltipla":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-hand-grab-o"
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"SELECT role as d, role as u\nFROM vw_gis_roles\nORDER BY 1;"
+       ,"Display Extra Values":true
+       ,"Display Null Value":true
+       ,"Null Display Value":"-- SELECIONE A ROLE --"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"753813098835701956"
+     ,"Identification":{
+        "Name":"P11_ROLE_BASE"
+       ,"Type":"Lista de Sele\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Role base"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "A\u00E7\u00E3o da P\u00E1gina na Sele\u00E7\u00E3o":"None"
+       ,"Permitir Sele\u00E7\u00E3o M\u00FAltipla":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-hand-grab-o"
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"SQL Query"
+       ,"SQL Query":"SELECT role as d, role as u\nFROM vw_gis_roles\nORDER BY 1;"
+       ,"Display Extra Values":true
+       ,"Display Null Value":true
+       ,"Null Display Value":"-- SELECIONE A ROLE --"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"123824185603989220"
+     ,"Identification":{
+        "Button Name":"ATRIBUIR_ROLE_PARA_ROLE"
+       ,"Label":"Atribuir role para role"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--iconRight"
+         ,"t-Button--stretch"
+         ,"t-Button--gapTop"
+         ,"t-Button--padBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Comments":{
+        "Comments":"N\u00E3o tenho certeza se est\u00E1 funcionando."
+      }
+    }
+   ,{
+      "id":"123825301182989221"
+     ,"Identification":{
+        "Button Name":"CANCELAR"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillEnd"
+         ,"t-Button--stretch"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":false
+      }
+    }
+   ,{
+      "id":"139403574671070917"
+     ,"Identification":{
+        "Button Name":"REVOGAR_ROLE_PARA_ROLE"
+       ,"Label":"Revogar role para role"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--iconRight"
+         ,"t-Button--stretch"
+         ,"t-Button--padBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Comments":{
+        "Comments":"N\u00E3o tenho certeza se est\u00E1 funcionando."
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"123831641225989228"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":50
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCELAR (123825301182989221)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"123832165972989228"
+         ,"Identification":{
+            "Action":"Fechar Caixa de Di\u00E1logo"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Fechar modal (123831641225989228)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"123827065416989224"
+     ,"Identification":{
+        "Name":"Atribuir role para role"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR(4000);\n    v_acao VARCHAR2(30);\nBEGIN\n    v_acao := \u0027Atribuir role para role\u0027;\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de atribui\u00E7\u00E3o da role \u0027 || \u0027\"\u0027 || UPPER(:P11_ROLE_ATRIBUIDA) || \u0027\"\u0027 || \u0027 para a role \u0027 || \u0027\"\u0027 || UPPER(:P11_ROLE_BASE) || \u0027\"\u0027));\n    \n    BEGIN\n        pk_gis.atribuir_role_role(REPLACE(:P11_ROLE_ATRIBUIDA, \u0027RL_GIS_\u0027, \u0027\u0027), REPLACE(:P11_ROLE_BASE, \u0027RL_GIS_\u0027, \u0027\u0027));\n\n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Role atribu\u00EDda com sucesso.\u0027;\n    EXCEPTION\n        WHEN OTHERS THEN\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro - \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n\n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Atribui\u00E7\u00E3o realizada com sucesso de \u0026P11_ROLE_ATRIBUIDA. para \u0026P11_ROLE_BASE."
+      }
+     ,"Error":{
+        "Error Message":"Erro: N\u00E3o foi poss\u00EDvel atribuir a role para role.\n\nDetalhes: #SQLERRM_TEXT#"
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"ATRIBUIR_ROLE_PARA_ROLE (123824185603989220)"
+      }
+    }
+   ,{
+      "id":"139403250394070914"
+     ,"Identification":{
+        "Name":"Revogar role para role"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR(4000);\n    v_acao VARCHAR2(30);\nBEGIN\n    v_acao := \u0027Revogar role para role\u0027;\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de revoga\u00E7\u00E3o da role \u0027 || \u0027\"\u0027 || UPPER(:P11_ROLE_ATRIBUIDA) || \u0027\"\u0027 || \u0027 para a role \u0027 || \u0027\"\u0027 || UPPER(:P11_ROLE_BASE) || \u0027\"\u0027));\n    \n    BEGIN\n        pk_gis.revogar_role_role(REPLACE(:P11_ROLE_ATRIBUIDA, \u0027RL_GIS_\u0027, \u0027\u0027), REPLACE(:P11_ROLE_BASE, \u0027RL_GIS_\u0027, \u0027\u0027));\n\n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Role revogada com sucesso.\u0027;\n    EXCEPTION\n        WHEN OTHERS THEN\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro - \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Revoga\u00E7\u00E3o realizada com sucesso de \u0026P11_ROLE_ATRIBUIDA. para \u0026P11_ROLE_BASE."
+      }
+     ,"Error":{
+        "Error Message":"Erro: N\u00E3o foi poss\u00EDvel revogar a role para role.\n#SQLERRM_TEXT#"
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"REVOGAR_ROLE_PARA_ROLE (139403574671070917)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"123834063655989229"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:3:\u0026SESSION.::\u0026DEBUG.:11::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"3"
+         ,"Clear Cache":"11"
+        }
+      }
+    }
+  ]
+}

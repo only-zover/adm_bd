@@ -1,0 +1,821 @@
+{
+  "id":"20"
+ ,"Identification":{
+    "Name":"Teste de Estresse"
+   ,"Alias":"TESTE-DE-ESTRESSE"
+   ,"Title":"Teste de Estresse"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"155211218767114611"
+     ,"Identification":{
+        "Title":"Configura\u00E7\u00F5es"
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (122707082898044968)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--hideHeader"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"HTML"
+         ,"Expandir Atalhos":false
+        }
+      }
+    }
+   ,{
+      "id":"155212076613114619"
+     ,"Identification":{
+        "Title":"Novo"
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Buttons Container (122670611314044954)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form--xlarge"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"HTML"
+         ,"Expandir Atalhos":false
+        }
+      }
+    }
+   ,{
+      "id":"155212134854114620"
+     ,"Identification":{
+        "Title":"Novo"
+       ,"Type":"Relat\u00F3rio Interativo"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"Table \/ View"
+       ,"Table Owner":"Parsing Schema"
+       ,"Table Name":"TESTE_ESTRESSE"
+       ,"Include ROWID Column":false
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (122679352814044958)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"155212241453114621"
+       ,"Link":{
+          "Link Column":"Exclude Link Column"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+         ,"Maximum Rows to Process":1000000
+        }
+       ,"Search Bar":{
+          "Include Search Bar":true
+         ,"Search Field":true
+         ,"Finder Drop Down":true
+         ,"Reports Select List":true
+         ,"Rows Per Page Selector":false
+        }
+       ,"Actions Menu":{
+          "Include Actions Menu":true
+         ,"Filter":true
+         ,"Select Columns":true
+         ,"Rows Per Page":true
+         ,"Sort":true
+         ,"Control Break":true
+         ,"Highlight":true
+         ,"Compute":true
+         ,"Aggregate":true
+         ,"Chart":true
+         ,"Group By":true
+         ,"Pivot":true
+         ,"Flashback":true
+         ,"Save Report":true
+         ,"Save Public Report":false
+         ,"Reset":true
+         ,"Help":true
+         ,"Download":true
+         ,"Subscription":true
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"164203926980035201"
+           ,"Identification":{
+              "Name":"Relat\u00F3rio Prim\u00E1rio"
+             ,"Alias":"1642040"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"155212323265114622"
+           ,"Identification":{
+              "Column Name":"ID"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Id"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":10
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":true
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"155212485766114623"
+           ,"Identification":{
+              "Column Name":"DADOS"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Dados"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":20
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+        ]
+       ,"Printing":{
+          "Output":{
+            "View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"A4"
+           ,"Orientation":"Landscape"
+           ,"Units":"Millimeters"
+           ,"Width":297
+           ,"Height":210
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+           ,"Page Header Text":"Novo"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+    }
+   ,{
+      "id":"155212940684114628"
+     ,"Identification":{
+        "Title":"Novo"
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (122707082898044968)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"HTML"
+         ,"Expandir Atalhos":false
+        }
+      }
+    }
+   ,{
+      "id":"162001263976592012"
+     ,"Identification":{
+        "Title":"Breadcrumb"
+       ,"Type":"Breadcrumb"
+      }
+     ,"Source":{
+        "Breadcrumb":"Breadcrumb (122603726361044904)"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Title Bar (122719492812044974)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-BreadcrumbRegion--useBreadcrumbTitle"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "Breadcrumb Template":"Breadcrumb (122781816620045014)"
+         ,"Template Options":[
+            "#DEFAULT#"
+          ]
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"155211337324114612"
+     ,"Identification":{
+        "Name":"P20_TEMPO_TOTAL"
+       ,"Type":"Somente Exibi\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Tempo de execu\u00E7\u00E3o"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Formato":"Plain Text"
+       ,"Com Base Em":"Item Value"
+       ,"Mostrar Quebras de Linha":true
+       ,"Enviar ao Submeter P\u00E1gina":true
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"Configura\u00E7\u00F5es (155211218767114611)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (122777488100045008)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+         ,"t-Form-fieldContainer--preTextBlock"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"155211917863114618"
+     ,"Identification":{
+        "Name":"P20_NUMERO_EXECUCOES"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"N\u00FAmero de execu\u00E7\u00F5es"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":false
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Configura\u00E7\u00F5es (155211218767114611)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":false
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (122777734067045010)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"155213099033114629"
+     ,"Identification":{
+        "Name":"P20_NEW"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Novo"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":false
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Novo (155212940684114628)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (122777734067045010)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Function Body"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Function Body":"return TO_CHAR(localtimestamp, \u0027YYYY.MM.DD HH24:MM:SS.FF4\u0027);"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"155213385636114632"
+     ,"Identification":{
+        "Name":"P20_QUANTIDADE_USUARIOS"
+       ,"Type":"Somente Exibi\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Quantidade de usu\u00E1rios"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Formato":"Plain Text"
+       ,"Com Base Em":"Item Value"
+       ,"Mostrar Quebras de Linha":true
+       ,"Enviar ao Submeter P\u00E1gina":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Novo (155212940684114628)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (122777734067045010)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"155211429490114613"
+     ,"Identification":{
+        "Button Name":"TESTAR"
+       ,"Label":"Testar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Novo (155212076613114619)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"155211590517114614"
+     ,"Identification":{
+        "Button Name":"ESVAZIAR_TABELA"
+       ,"Label":"Esvaziar Tabela"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Novo (155212076613114619)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"155211197792114610"
+     ,"Identification":{
+        "Name":"Teste de Estresse"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_inicio_tempo NUMBER;\n    v_fim_tempo NUMBER;\n    v_tempo_total NUMBER;\n    v_numero_execucoes NUMBER := :P20_NUMERO_EXECUCOES;\n    v_segundos NUMBER;\n    v_centesimos NUMBER;\nBEGIN\n    v_inicio_tempo := DBMS_UTILITY.GET_TIME;\n\n    FOR i IN 1..:P20_NUMERO_EXECUCOES LOOP\n        TESTAR_ESTRESSE;\n    END LOOP;\n\n    v_fim_tempo := DBMS_UTILITY.GET_TIME;\n    v_tempo_total := (v_fim_tempo - v_inicio_tempo) \/ 100;\n\n    v_segundos := TRUNC(v_tempo_total);\n    v_centesimos := TRUNC(MOD(v_tempo_total * 100, 100));\n    \n    :P20_TEMPO_TOTAL := \u0027Tempo total de execu\u00E7\u00E3o: \u0027 || v_segundos || \u0027 segundos e \u0027 || v_centesimos || \u0027 cent\u00E9simos.\u0027;\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Teste com \u0026P20_NUMERO_EXECUCOES. execu\u00E7\u00F5es realizado com sucesso!"
+      }
+     ,"Error":{
+        "Error Message":"N\u00E3o foi poss\u00EDvel realizar o teste.\n#SQLERRM#"
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"TESTAR (155211429490114613)"
+      }
+    }
+   ,{
+      "id":"155211842812114617"
+     ,"Identification":{
+        "Name":"Limpar tabela"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DELETE FROM teste_estresse;"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Tabela esvaziada com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"N\u00E3o foi poss\u00EDvel esvaziar a tabela.\n#SQLERRM#"
+       ,"Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"ESVAZIAR_TABELA (155211590517114614)"
+      }
+    }
+  ]
+}

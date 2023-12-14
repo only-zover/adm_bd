@@ -1,0 +1,330 @@
+{
+  "id":"8"
+ ,"Identification":{
+    "Name":"Criar role"
+   ,"Alias":"CRIAR-ROLE"
+   ,"Title":"Criar role"
+   ,"Page Group":"Modais (128800547338567542)"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Attributes":[
+      "draggable:false"
+    ]
+   ,"Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Comments":{
+    "Comments":"Provavelmente essa p\u00E1gina ser\u00E1 totalmente alterada"
+  }
+ ,"Page Items":[
+    {
+      "id":"753530238982641395"
+     ,"Identification":{
+        "Name":"P8_ROLE"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Role"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":true
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-hand-grab-o"
+       ,"Width":30
+       ,"Value Placeholder":"Nome da role"
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"123542172609928659"
+     ,"Identification":{
+        "Button Name":"CRIAR"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillStart"
+         ,"t-Button--stretch"
+         ,"t-Button--gapTop"
+         ,"t-Button--padBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL INSERT action"
+      }
+    }
+   ,{
+      "id":"123542572703928659"
+     ,"Identification":{
+        "Button Name":"CANCELAR"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":100
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillEnd"
+         ,"t-Button--stretch"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":false
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"123518605079624508"
+     ,"Identification":{
+        "Name":"Retirar espa\u00E7o em branco"
+      }
+     ,"Execution":{
+        "Sequence":60
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CRIAR (123542172609928659)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"123518706074624509"
+         ,"Identification":{
+            "Action":"Definir Valor"
+          }
+         ,"Settings":{
+            "Definir Tipo":"JavaScript Expression"
+           ,"Express\u00E3o JavaScript":"apex.item(\u0027P8_ROLE\u0027).getValue().replace(\u0027 \u0027, \u0027\u0027);"
+           ,"Suprimir Evento de Altera\u00E7\u00E3o":false
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Item(s)"
+           ,"Item(s)":[
+              "P8_ROLE"
+            ]
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Retirar espa\u00E7o em branco (123518605079624508)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":true
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"123548708355928683"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":50
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCELAR (123542572703928659)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"123549235417928684"
+         ,"Identification":{
+            "Action":"Fechar Caixa de Di\u00E1logo"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Fechar modal (123548708355928683)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"123518524090624507"
+     ,"Identification":{
+        "Name":"Role existe"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"SELECT null\nFROM dba_roles\nWHERE role = \u0027RL_GIS_\u0027 || UPPER(:P8_ROLE);"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Essa role j\u00E1 existe"
+       ,"Display Location":"Inline with Field"
+       ,"Associated Item":"P8_ROLE (753530238982641395)"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"123544244655928675"
+     ,"Identification":{
+        "Name":"Criar role"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_acao VARCHAR2(20);\nBEGIN\n    v_acao := \u0027Criar role\u0027;\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de cria\u00E7\u00E3o da role \u0027 || \u0027\"\u0027 || UPPER(:P8_ROLE) || \u0027\"\u0027));\n    \n    BEGIN\n        pk_gis.criar_role(:P8_ROLE);\n        \n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Role criada com sucesso.\u0027;\n    EXCEPTION\n        WHEN OTHERS THEN\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro - \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            \n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Role \u0026P8_ROLE. criada com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"Erro: N\u00E3o foi poss\u00EDvel criar a role.\n\nDetalhes: #SQLERRM_TEXT#"
+       ,"Display Location":"Inline in Notification"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"123551166657928686"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:15:\u0026SESSION.::\u0026DEBUG.:8::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"15"
+         ,"Clear Cache":"8"
+        }
+      }
+    }
+  ]
+}

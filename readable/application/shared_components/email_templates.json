@@ -1,0 +1,22 @@
+[
+  {
+    "id":"126978849031588198"
+   ,"Identification":{
+      "Name":"Email novo usuario"
+     ,"Email Subject":"Altera\u00E7\u00E3o de senha"
+    }
+   ,"HTML Format":{
+      "Header":"\u003Cb style=\"font-size: 24px;\"\u003EAltera\u00E7\u00E3o de senha\u003C\/b\u003E"
+     ,"Body":"\u003Cdiv\u003E\r\n\u003Ch1\u003ESeu usu\u00E1rio foi criado.\u003C\/h1\u003E\r\n\u003Cp\u003E\r\n    \u003Cb\u003ENome de usu\u00E1rio:\u003C\/b\u003E #USUARIO#\r\n    \u003Cbr\u003E\r\n    \u003Cb\u003ESenha:\u003C\/b\u003E #SENHA#\r\n\u003C\/p\u003E\r\n\u003Ch2\u003EClique no bot\u00E3o abaixo para alterar sua senha padr\u00E3o.\u003C\/h2\u003E\r\n\u003Cbr\u003E\r\n\u003Ca href=\"https:\/\/appdev.londrina.pr.gov.br\/app\/r\/siglon\/interface-de-controle\/\"\u003E\u003Cbutton\u003EAlterar senha\u003C\/button\u003E\u003C\/a\u003E\r\n\u003C\/div\u003E\r\n\u003Cstyle\u003E\r\n    button {\r\n        margin-top: 0.5rem;\r\n        padding: 0.6rem;\r\n        width: 21rem;\r\n        font-weight: bold;\r\n    }\r\n\r\n    div {\r\n        text-align: center;\r\n    }\r\n\r\n    a button {\r\n        display: inline-block;\r\n        padding: 10px 20px;\r\n        background-color: #3498db;\r\n        color: #fff;\r\n        font-size: 16px;\r\n        border: none;\r\n        border-radius: 5px;\r\n        cursor: pointer;\r\n        text-decoration: none; \/* Remova o sublinhado do link *\/\r\n        transition: background-color 0.3s;\r\n    }\r\n\r\n    \/* Altere a cor de fundo ao passar o mouse *\/\r\n    a button:hover {\r\n        background-color: #2980b9;\r\n    }\r\n\u003C\/style\u003E"
+    }
+   ,"Plain Text Format":{
+      "Content":"Seu usu\u00E1rio foi criado.\r\n\r\nNome de usu\u00E1rio: #USUARIO#\r\nSenha: #SENHA#\r\n\r\nClique no link abaixo para alterar a senha.\r\n\r\nhttps:\/\/appdev.londrina.pr.gov.br\/app\/r\/siglon\/alterar-senha\/"
+    }
+   ,"Advanced":{
+      "Static ID":"EMAIL_NOVO_USUARIO"
+    }
+   ,"Comments":{
+      "Comments":"Template para e-mail de cria\u00E7\u00E3o de usu\u00E1rio."
+    }
+  }
+]

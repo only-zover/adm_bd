@@ -1,0 +1,38 @@
+[
+  {
+    "id":"122603433382044902"
+   ,"Identification":{
+      "Name":"Contas do Oracle APEX"
+    }
+   ,"Settings":{
+      "Type":"Contas do Oracle APEX"
+    }
+   ,"Session Not Valid":{
+      "Redirect to":"Login Page"
+    }
+   ,"Login Processing":{
+      "Switch in Session":false
+    }
+   ,"Real Application Security":{
+      "RAS Mode":"Disabled"
+    }
+  }
+ ,{
+    "id":"123515869930392740"
+   ,"Identification":{
+      "Name":"C\u00F3pia de DB ACC"
+    }
+   ,"Settings":{
+      "Type":"Contas de Banco de Dados"
+    }
+   ,"Session Not Valid":{
+      "Redirect to":"Login Page"
+    }
+   ,"Login Processing":{
+      "Switch in Session":false
+    }
+   ,"Real Application Security":{
+      "RAS Mode":"Disabled"
+    }
+  }
+]

@@ -1,0 +1,417 @@
+{
+  "id":"7"
+ ,"Identification":{
+    "Name":"Alterar senha"
+   ,"Alias":"ALTERAR-SENHA"
+   ,"Title":"Alterar senha"
+   ,"Page Group":"Modais (128800547338567542)"
+  }
+ ,"Appearance":{
+    "Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Attributes":[
+      "draggable:false"
+    ]
+   ,"Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Page Items":[
+    {
+      "id":"325471761737674212"
+     ,"Identification":{
+        "Name":"P7_USUARIO"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Usu\u00E1rio"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"Leading and Trailing"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":false
+       ,"Desativado":true
+       ,"Enviar ao Submeter P\u00E1gina":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (122777734067045010)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-user"
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Function Body"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Function Body":"DECLARE\n    VAL VARCHAR2(256);\nBEGIN\n    VAL := APEX_CUSTOM_AUTH.GET_USER;\nRETURN VAL;\nEND;"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"325472002411674214"
+     ,"Identification":{
+        "Name":"P7_SENHA"
+       ,"Type":"Senha"
+      }
+     ,"Label":{
+        "Label":"Senha"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Submeter ao pressionar Enter":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-key"
+       ,"Width":30
+       ,"Value Placeholder":"Nova senha"
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":30
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"54302148439052868958"
+     ,"Identification":{
+        "Name":"P7_CONFIRMAR_SENHA"
+       ,"Type":"Senha"
+      }
+     ,"Label":{
+        "Label":"Confirmar senha"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Submeter ao pressionar Enter":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+         ,"margin-bottom-md"
+        ]
+       ,"Icon":"fa-lg fa-key"
+       ,"Width":30
+       ,"Value Placeholder":"Repita a nova senha"
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":30
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"122937377621246654"
+     ,"Identification":{
+        "Button Name":"ALTERAR"
+       ,"Label":"Alterar"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillStart"
+         ,"t-Button--stretch"
+         ,"t-Button--gapTop"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL UPDATE action"
+      }
+    }
+   ,{
+      "id":"122937752630246654"
+     ,"Identification":{
+        "Button Name":"CANCELAR"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillEnd"
+         ,"t-Button--stretch"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":false
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"122941350938246659"
+     ,"Identification":{
+        "Name":"Fechar modal"
+      }
+     ,"Execution":{
+        "Sequence":50
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCELAR (122937752630246654)"
+      }
+     ,"Execution":{
+        "Event Scope":"Static"
+       ,"Type":"Immediate"
+      }
+     ,"Actions":[
+        {
+          "id":"122941891760246659"
+         ,"Identification":{
+            "Action":"Fechar Caixa de Di\u00E1logo"
+          }
+         ,"Execution":{
+            "Sequence":10
+           ,"Event":"Fechar modal (122941350938246659)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"122939257066246656"
+     ,"Identification":{
+        "Name":"Senha igual"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"Expression"
+       ,"Language":"SQL"
+       ,"SQL Expression":":P7_SENHA = :P7_CONFIRMAR_SENHA OR :P7_CONFIRMAR_SENHA IS NULL"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"As senhas s\u00E3o diferentes."
+       ,"Display Location":"Inline with Field"
+       ,"Associated Item":"P7_CONFIRMAR_SENHA (54302148439052868958)"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"122939901030246657"
+     ,"Identification":{
+        "Name":"Encerrar sess\u00E3o"
+       ,"Type":"Limpar Estado da Sess\u00E3o"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Tipo":"Clear Current Session"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"122940305274246657"
+     ,"Identification":{
+        "Name":"Atualizar senha"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_acao VARCHAR2(20);\nBEGIN\n    v_acao := \u0027Alterar senha\u0027;\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de altera\u00E7\u00E3o de senha do usu\u00E1rio \u0027 || \u0027\"\u0027 || UPPER(:APP_USER) || \u0027\"\u0027));\n    \n    BEGIN\n        pk_gis.alterar_senha(APEX_CUSTOM_AUTH.GET_USERNAME, :P7_CONFIRMAR_SENHA);\n        \n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Senha alterada com sucesso.\u0027;\n    EXCEPTION\n        WHEN OTHERS THEN\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro - \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            \n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Senha alterada com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"Erro: n\u00E3o foi poss\u00EDvel alterar a senha.\n\nDetalhes: #SQLERRM_TEXT#"
+       ,"Display Location":"Inline in Notification"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"122942370924246659"
+     ,"Identification":{
+        "Name":"Ir para login"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9999:\u0026SESSION.::\u0026DEBUG.:::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"9999"
+        }
+      }
+    }
+  ]
+}

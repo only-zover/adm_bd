@@ -1,0 +1,130 @@
+{
+  "id":"154"
+ ,"Identification":{
+    "Name":"Interface de Controle"
+   ,"Alias":"INTERFACE-DE-CONTROLE"
+   ,"Version":"DD.MM.YYYY"
+  }
+ ,"Row Search":{
+    "Tokenize":true
+  }
+ ,"Availability":{
+    "Status":"Available with Developer Toolbar"
+   ,"Build Status":"Run and Build Application"
+  }
+ ,"Error Handling":{
+    "Default Display Location":"Inline with Field and in Notification"
+  }
+ ,"Report Printing":{
+    "Type":"Use Instance Settings"
+  }
+ ,"Advanced":{
+    "Friendly URLs":true
+   ,"Allow Feedback":true
+   ,"Logging":true
+   ,"Debugging":true
+   ,"Compatibility Mode":"21.2 \/ 22.1 \/ 22.2"
+  }
+ ,"Authentication":{
+    "Public User":"APEX_PUBLIC_USER"
+   ,"Authentication Scheme":"C\u00F3pia de DB ACC (123515869930392740)"
+  }
+ ,"Authorization":{
+    "Source for Role or Group Schemes":"Access Control User Role Assignments"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Disabled"
+  }
+ ,"Session State Protection":{
+    "Enabled":true
+  }
+ ,"Security":{
+    "Deep Linking":"Disabled"
+   ,"Browser Cache":"Disabled"
+   ,"Embed in Frames":"Deny"
+   ,"Referrer Policy":"strict-origin"
+   ,"HTML Escaping Mode":"Extended"
+  }
+ ,"Advanced":{
+    "Pass ECID":"Y"
+  }
+ ,"Database Session":{
+    "Parsing Schema":"GISADMIN"
+  }
+ ,"Globalization":{
+    "Primary Language":"Portuguese (Brazil) (pt-br)"
+   ,"Document Direction":"Left-To-Right"
+   ,"Language Derived From":"Application Primary Language"
+   ,"Automatic Time Zone":false
+   ,"Automatic CSV Encoding":true
+  }
+ ,"Application Format Masks":{
+    "Date":"DS"
+   ,"Timestamp":"DS"
+   ,"Timestamp Time Zone":"DS"
+  }
+ ,"Character Value Comparison":{
+    "Behavior":"Database session NLS setting (default)"
+  }
+ ,"Logo":{
+    "Type":"Text"
+   ,"Text":"Interface de Controle"
+  }
+ ,"Progressive Web App":{
+    "Enable":true
+   ,"Installable":false
+   ,"Display":"Standalone"
+   ,"Screen Orientation":"Any"
+   ,"iOS Status Bar Style":"Default"
+   ,"Enable Push Notifications":false
+  }
+ ,"Navigation":{
+    "Home URL":{
+      "url":"f?p=\u0026APP_ID.:1:\u0026APP_SESSION.::\u0026DEBUG.:::"
+     ,"Page":"1"
+    }
+   ,"Login URL":{
+      "url":"f?p=\u0026APP_ID.:LOGIN:\u0026APP_SESSION.::\u0026DEBUG.:::"
+     ,"Page":"LOGIN"
+    }
+  }
+ ,"Navigation Menu":{
+    "List Template":"Side Navigation Menu (122765013374045003)"
+   ,"Template Options":[
+      "#DEFAULT#"
+     ,"js-defaultCollapsed"
+     ,"js-navCollapsed--hidden"
+     ,"t-TreeNav--styleA"
+    ]
+   ,"List Position":"Side"
+   ,"List":"Menu de Navega\u00E7\u00E3o (122604265650044908)"
+  }
+ ,"Navigation Bar":{
+    "Implementation":"List"
+   ,"List":"Barra de Navega\u00E7\u00E3o (122888022986045117)"
+   ,"List Template":"Navigation Bar (122767847178045004)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"JavaScript":{
+    "Include jQuery Migrate":false
+  }
+ ,"Attributes":{
+    "Theme":"Universal Theme (42)"
+   ,"Global Page":"0"
+   ,"Enable End Users to choose Theme Style":false
+   ,"Add \"Built with APEX\" to Footer":false
+  }
+ ,"Substitutions":[
+    {
+      "id":"1"
+     ,"Identification":{
+        "Name":"APP_NAME"
+      }
+     ,"Value":{
+        "Static Value":"ADM BD"
+      }
+    }
+  ]
+}

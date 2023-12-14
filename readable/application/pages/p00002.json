@@ -1,0 +1,1463 @@
+{
+  "id":"2"
+ ,"Identification":{
+    "Name":"Usu\u00E1rios"
+   ,"Alias":"USUARIOS"
+   ,"Title":"Usu\u00E1rios"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Help":{
+    "Help Text":"\u003Cp\u003EPara localizar os dados, digite um termo de pesquisa na caixa de di\u00E1logo ou clique nos cabe\u00E7alhos da coluna para limitar os registros retornados.\u003C\/p\u003E\n\n\u003Cp\u003EVoc\u00EA pode executar v\u00E1rias fun\u00E7\u00F5es clicando no bot\u00E3o \u003Cstrong\u003EA\u00E7\u00F5es\u003C\/strong\u003E. Isso inclui a sele\u00E7\u00E3o de colunas que s\u00E3o exibidas\/ocultas e sua sequ\u00EAncia de exibi\u00E7\u00E3o, mais v\u00E1rios dados e fun\u00E7\u00F5es de formato. Tamb\u00E9m \u00E9 poss\u00EDvel definir views adicionais de dados usando a op\u00E7\u00E3o do gr\u00E1fico, agrupar por e tabela din\u00E2mica.\u003C\/p\u003E\n\n\u003Cp\u003ESe quiser salvar suas personaliza\u00E7\u00F5es, selecione o relat\u00F3rio ou clique em download para descarregar os dados. Informe seu endere\u00E7o de e-mail e per\u00EDodo de assinatura para que os dados sejam enviados regularmente.\u003Cp\u003E\n\n\u003Cp\u003EPara obter informa\u00E7\u00F5es adicionais, clique em Ajuda na parte inferior do menu A\u00E7\u00F5es.\u003C\/p\u003E\n\n\u003Cp\u003EClique no bot\u00E3o \u003Cstrong\u003ERedefinir\u003C\/strong\u003E para redefinir o relat\u00F3rio interativo para as configura\u00E7\u00F5es padr\u00E3o.\u003C\/p\u003E"
+  }
+ ,"Regions":[
+    {
+      "id":"122901874814045160"
+     ,"Identification":{
+        "Title":"Administra\u00E7\u00E3o de usu\u00E1rios"
+       ,"Type":"Relat\u00F3rio Interativo"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT *\nFROM dba_users\nWHERE default_tablespace = \u0027SDE_DATA\u0027\nORDER BY username ASC;"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (122679352814044958)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"122901987799045160"
+       ,"Link":{
+          "Link Column":"Exclude Link Column"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"Dados n\u00E3o encontrados."
+         ,"When More Data Found":"A contagem m\u00E1xima de linhas deste relat\u00F3rio \u00E9 #MAX_ROW_COUNT# linhas. Aplique um filtro para reduzir o n\u00FAmero de registros em sua consulta."
+        }
+       ,"Search Bar":{
+          "Include Search Bar":true
+         ,"Search Field":true
+         ,"Finder Drop Down":true
+         ,"Reports Select List":true
+         ,"Rows Per Page Selector":false
+         ,"Maximum Rows Per Page":"15"
+        }
+       ,"Actions Menu":{
+          "Include Actions Menu":true
+         ,"Filter":true
+         ,"Select Columns":true
+         ,"Rows Per Page":true
+         ,"Sort":true
+         ,"Control Break":true
+         ,"Highlight":true
+         ,"Compute":true
+         ,"Aggregate":true
+         ,"Chart":true
+         ,"Group By":true
+         ,"Pivot":true
+         ,"Flashback":true
+         ,"Save Report":true
+         ,"Save Public Report":true
+         ,"Reset":true
+         ,"Help":true
+         ,"Download":true
+         ,"Subscription":true
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"122929892903046603"
+           ,"Identification":{
+              "Name":"Relat\u00F3rio Prim\u00E1rio"
+             ,"Alias":"1229299"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"122902373652045161"
+           ,"Identification":{
+              "Column Name":"USERNAME"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Username"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":1
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122902793040045162"
+           ,"Identification":{
+              "Column Name":"USER_ID"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"User Id"
+             ,"Alignment":"end"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":2
+             ,"Column Alignment":"end"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122903103293045162"
+           ,"Identification":{
+              "Column Name":"PASSWORD"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Password"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":3
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122903546150045162"
+           ,"Identification":{
+              "Column Name":"ACCOUNT_STATUS"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Account Status"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":4
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122903980530045162"
+           ,"Identification":{
+              "Column Name":"LOCK_DATE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Lock Date"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":5
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+             ,"Date Ranges":"All"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122904301345045163"
+           ,"Identification":{
+              "Column Name":"EXPIRY_DATE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Expiry Date"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":6
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+             ,"Date Ranges":"All"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122904780574045163"
+           ,"Identification":{
+              "Column Name":"DEFAULT_TABLESPACE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Default Tablespace"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":7
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122905164723045163"
+           ,"Identification":{
+              "Column Name":"TEMPORARY_TABLESPACE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Temporary Tablespace"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":8
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122905538188045163"
+           ,"Identification":{
+              "Column Name":"LOCAL_TEMP_TABLESPACE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Local Temp Tablespace"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":9
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122905928548045164"
+           ,"Identification":{
+              "Column Name":"CREATED"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Created"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":10
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+             ,"Date Ranges":"All"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122906348669045164"
+           ,"Identification":{
+              "Column Name":"PROFILE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Profile"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":11
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122906695859045164"
+           ,"Identification":{
+              "Column Name":"INITIAL_RSRC_CONSUMER_GROUP"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Initial Rsrc Consumer Group"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":12
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122907054989045164"
+           ,"Identification":{
+              "Column Name":"EXTERNAL_NAME"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"External Name"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":13
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122907450858045165"
+           ,"Identification":{
+              "Column Name":"PASSWORD_VERSIONS"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Password Versions"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":14
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122907865311045165"
+           ,"Identification":{
+              "Column Name":"EDITIONS_ENABLED"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Editions Enabled"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":15
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122908224838045165"
+           ,"Identification":{
+              "Column Name":"AUTHENTICATION_TYPE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Authentication Type"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":16
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122908642287045166"
+           ,"Identification":{
+              "Column Name":"PROXY_ONLY_CONNECT"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Proxy Only Connect"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":17
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122909087145045166"
+           ,"Identification":{
+              "Column Name":"COMMON"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Common"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":18
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122909466331045166"
+           ,"Identification":{
+              "Column Name":"LAST_LOGIN"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Last Login"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":19
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+             ,"Date Ranges":"All"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122909843416045166"
+           ,"Identification":{
+              "Column Name":"ORACLE_MAINTAINED"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Oracle Maintained"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":20
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122910264257045167"
+           ,"Identification":{
+              "Column Name":"INHERITED"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Inherited"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":21
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122910645092045167"
+           ,"Identification":{
+              "Column Name":"DEFAULT_COLLATION"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Default Collation"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":22
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122911005674045167"
+           ,"Identification":{
+              "Column Name":"IMPLICIT"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Implicit"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":23
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122911405009045167"
+           ,"Identification":{
+              "Column Name":"ALL_SHARD"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"All Shard"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":24
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"122911869347045168"
+           ,"Identification":{
+              "Column Name":"PASSWORD_CHANGE_DATE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Password Change Date"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":25
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+             ,"Date Ranges":"All"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+        ]
+       ,"Printing":{
+          "Output":{
+            "View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"Letter"
+           ,"Orientation":"Landscape"
+           ,"Units":"Inches"
+           ,"Width":11
+           ,"Height":8.5
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+           ,"Page Header Text":"Administra\u00E7\u00E3o de usu\u00E1rios"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+    }
+   ,{
+      "id":"122913046692045171"
+     ,"Identification":{
+        "Title":"Breadcrumb"
+       ,"Type":"Breadcrumb"
+      }
+     ,"Source":{
+        "Breadcrumb":"Breadcrumb (122603726361044904)"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Title Bar (122719492812044974)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-BreadcrumbRegion--useBreadcrumbTitle"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "Breadcrumb Template":"Breadcrumb (122781816620045014)"
+         ,"Template Options":[
+            "#DEFAULT#"
+          ]
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"121228049713132045"
+     ,"Identification":{
+        "Button Name":"CRIAR"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Administra\u00E7\u00E3o de usu\u00E1rios (122901874814045160)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-plus"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:4:\u0026SESSION.::\u0026DEBUG.:::"
+         ,"Page":"4"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Security":{
+        "Authorization Scheme":"ADM_BD (123601292907091815)"
+      }
+    }
+   ,{
+      "id":"121228101948132046"
+     ,"Identification":{
+        "Button Name":"BLOQUEAR"
+       ,"Label":"Bloquear \/ Desbloquear"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Administra\u00E7\u00E3o de usu\u00E1rios (122901874814045160)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-ban"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:5:\u0026SESSION.::\u0026DEBUG.:::"
+         ,"Page":"5"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Security":{
+        "Authorization Scheme":"ADM_BD (123601292907091815)"
+      }
+    }
+   ,{
+      "id":"121228292028132047"
+     ,"Identification":{
+        "Button Name":"EXCLUIR"
+       ,"Label":"Excluir"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Administra\u00E7\u00E3o de usu\u00E1rios (122901874814045160)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--danger"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-trash"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:6:\u0026SESSION.::\u0026DEBUG.:6::"
+         ,"Page":"6"
+         ,"Clear Cache":"6"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Security":{
+        "Authorization Scheme":"ADM_BD (123601292907091815)"
+      }
+    }
+   ,{
+      "id":"122912298795045168"
+     ,"Identification":{
+        "Button Name":"RESET_REPORT"
+       ,"Label":"Redefinir"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Administra\u00E7\u00E3o de usu\u00E1rios (122901874814045160)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-undo-alt"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:2:\u0026APP_SESSION.::\u0026DEBUG.:RR::"
+         ,"Page":"2"
+         ,"Clear Cache":"RR"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+}

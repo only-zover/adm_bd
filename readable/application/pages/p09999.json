@@ -1,0 +1,524 @@
+{
+  "id":"9999"
+ ,"Identification":{
+    "Name":"P\u00E1gina de Log-in"
+   ,"Alias":"LOGIN"
+   ,"Title":"ADM BD - Log-In"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Login (122612946642044926)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"First item on page"
+   ,"Warn on Unsaved Changes":false
+  }
+ ,"JavaScript":{
+    "Function and Global Variable Declaration":"apex.jQuery(apex.gPageContext$).on(\"apexpagesubmit\", function() {\n    const item = apex.item(\"P9999_USERNAME\");\n    item.setValue(item.getValue().replace(\u0027.\u0027, \u0027\u0027));\n});"
+  }
+ ,"Security":{
+    "Authentication":"Page Is Public"
+  }
+ ,"Advanced":{
+    "Enable Meta Tags":false
+  }
+ ,"Security":{
+    "Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"122893549997045145"
+     ,"Identification":{
+        "Title":"ADM BD"
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Login (122665413690044952)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Image":{
+        "File URL":"#APP_FILES#icons\/app-icon-512.png"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"HTML"
+         ,"Expandir Atalhos":false
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"122894039296045147"
+     ,"Identification":{
+        "Name":"P9999_USERNAME"
+       ,"Type":"Campo de Texto"
+      }
+     ,"Label":{
+        "Label":"Nome do Usu\u00E1rio"
+       ,"Alignment":"Right"
+      }
+     ,"Settings":{
+        "Subtipo":"Text"
+       ,"Remover Espa\u00E7os":"None"
+       ,"Formata\u00E7\u00E3o de Mai\u00FAsculas\/Min\u00FAsculas do Texto":"SEM ALTERA\u00C7\u00C3O"
+       ,"Submeter ao pressionar Enter":false
+       ,"Desativado":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"ADM BD (122893549997045145)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (122777488100045008)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Icon":"fa-user"
+       ,"Width":40
+       ,"Value Placeholder":"Nome do Usu\u00E1rio"
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":100
+      }
+     ,"Advanced":{
+        "Custom Attributes":[
+          "autocomplete=\"username\""
+        ]
+       ,"Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"122894425906045148"
+     ,"Identification":{
+        "Name":"P9999_PASSWORD"
+       ,"Type":"Senha"
+      }
+     ,"Label":{
+        "Label":"Senha"
+       ,"Alignment":"Right"
+      }
+     ,"Settings":{
+        "Submeter ao pressionar Enter":true
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"ADM BD (122893549997045145)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (122777488100045008)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Icon":"fa-key"
+       ,"Width":40
+       ,"Value Placeholder":"Senha"
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":100
+      }
+     ,"Advanced":{
+        "Custom Attributes":[
+          "autocomplete=\"current-password\""
+        ]
+       ,"Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"122894859650045149"
+     ,"Identification":{
+        "Name":"P9999_REMEMBER"
+       ,"Type":"Caixa de Sele\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Lembrar nome do usu\u00E1rio"
+       ,"Alignment":"Right"
+      }
+     ,"Settings":{
+        "Usar Padr\u00F5es":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"ADM BD (122893549997045145)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Hidden (122777488100045008)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Validation":{
+        "Value Required":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Server-side Condition":{
+        "Type":"Expression"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Expression":"apex_authentication.persistent_cookies_enabled"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"122895241456045150"
+     ,"Identification":{
+        "Button Name":"LOGIN"
+       ,"Label":"Acessar"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"ADM BD (122893549997045145)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"122895547527045151"
+     ,"Identification":{
+        "Name":"Login"
+       ,"Type":"Chamar API"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Tipo":"PL\/SQL Package"
+       ,"Propriet\u00E1rio":"ESQUEMA DE PARSING"
+       ,"Pacote":"APEX_AUTHENTICATION"
+       ,"Procedimento ou Fun\u00E7\u00E3o":"LOGIN"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Parameters":[
+        {
+          "id":"122896020838045151"
+         ,"Identification":{
+            "Name":"p_username"
+          }
+         ,"Parameter":{
+            "Direction":"In"
+           ,"Data Type":"VARCHAR2"
+           ,"Has Default":false
+          }
+         ,"Value":{
+            "Type":"Item"
+           ,"Item":"P9999_USERNAME"
+          }
+         ,"Advanced":{
+            "Display Sequence":1
+          }
+        }
+       ,{
+          "id":"122896514136045153"
+         ,"Identification":{
+            "Name":"p_password"
+          }
+         ,"Parameter":{
+            "Direction":"In"
+           ,"Data Type":"VARCHAR2"
+           ,"Has Default":false
+          }
+         ,"Value":{
+            "Type":"Item"
+           ,"Item":"P9999_PASSWORD"
+          }
+         ,"Advanced":{
+            "Display Sequence":2
+          }
+        }
+       ,{
+          "id":"122897059318045153"
+         ,"Identification":{
+            "Name":"p_set_persistent_auth"
+          }
+         ,"Parameter":{
+            "Direction":"In"
+           ,"Data Type":"BOOLEAN"
+           ,"Has Default":true
+          }
+         ,"Value":{
+            "Type":"API Default"
+          }
+         ,"Advanced":{
+            "Display Sequence":3
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"122897412646045153"
+     ,"Identification":{
+        "Name":"Definir Cookie de Nome do Usu\u00E1rio"
+       ,"Type":"Chamar API"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Tipo":"PL\/SQL Package"
+       ,"Propriet\u00E1rio":"ESQUEMA DE PARSING"
+       ,"Pacote":"APEX_AUTHENTICATION"
+       ,"Procedimento ou Fun\u00E7\u00E3o":"SEND_LOGIN_USERNAME_COOKIE"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Parameters":[
+        {
+          "id":"122897967966045153"
+         ,"Identification":{
+            "Name":"p_username"
+          }
+         ,"Parameter":{
+            "Direction":"In"
+           ,"Data Type":"VARCHAR2"
+           ,"Has Default":false
+          }
+         ,"Value":{
+            "Type":"Expression"
+           ,"Language":"PL\/SQL"
+           ,"PL\/SQL Expression":"lower( :P9999_USERNAME )"
+          }
+         ,"Advanced":{
+            "Display Sequence":1
+          }
+        }
+       ,{
+          "id":"122898460777045154"
+         ,"Identification":{
+            "Name":"p_consent"
+          }
+         ,"Parameter":{
+            "Direction":"In"
+           ,"Data Type":"BOOLEAN"
+           ,"Has Default":false
+          }
+         ,"Value":{
+            "Type":"Item"
+           ,"Item":"P9999_REMEMBER"
+          }
+         ,"Advanced":{
+            "Display Sequence":2
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"122898938973045154"
+     ,"Identification":{
+        "Name":"Obter Cookie de Nome do Usu\u00E1rio"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":":P9999_USERNAME := apex_authentication.get_login_username_cookie;\n:P9999_REMEMBER := case when :P9999_USERNAME is not null then \u0027Y\u0027 end;"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Before Header"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+    }
+   ,{
+      "id":"122899386826045154"
+     ,"Identification":{
+        "Name":"Limpar Cache de P\u00E1gina(s)"
+       ,"Type":"Limpar Estado da Sess\u00E3o"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Tipo":"Clear all Items on the Current Page"
+      }
+     ,"Execution":{
+        "Sequence":50
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"139402812223070910"
+     ,"Identification":{
+        "Name":"LOG"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_user VARCHAR2(50);\n    v_acao VARCHAR2(20);\nBEGIN\n    v_acao := \u0027Login\u0027;\n    v_user := :APP_USER;\n    \n    IF v_user = \u0027nobody\u0027 THEN\n        v_user := \u0027Desconhecido\u0027;\n        v_mensagem := \u0027Erro: n\u00E3o foi poss\u00EDvel realizar o login.\u0027;\n        v_status := \u0027ERRO\u0027;\n    ELSE\n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Login realizado com sucesso.\u0027;\n    END IF;\n\n    LOG_INSERT(\u0027Desconhecido\u0027, v_acao, \u0027INFO\u0027, (\u0027Tentativa de login com nome \u0027 || UPPER(:P9999_USERNAME)));\n    LOG_INSERT(v_user , v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":40
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"155210792334114606"
+     ,"Identification":{
+        "Name":"Inserir usu\u00E1rio na tabela de primeiro login"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_count NUMBER;\n    v_username VARCHAR2(255);\nBEGIN\n    v_username := :APP_USER;\n\n    SELECT COUNT(*)\n    INTO v_count\n    FROM usuarios_primeiro_login\n    WHERE usuario = v_username;\n\n    IF v_count = 0 THEN\n        INSERT INTO usuarios_primeiro_login (usuario) VALUES (v_username);\n        COMMIT;\n    END IF;\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":30
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+  ]
+}

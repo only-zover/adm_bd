@@ -1,0 +1,492 @@
+{
+  "id":"3"
+ ,"Identification":{
+    "Name":"Roles atribu\u00EDdas"
+   ,"Alias":"ROLES-ATRIBUIDAS"
+   ,"Title":"Roles atribu\u00EDdas"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Help":{
+    "Help Text":"\u003Cp\u003EPara localizar os dados, digite um termo de pesquisa na caixa de di\u00E1logo ou clique nos cabe\u00E7alhos da coluna para limitar os registros retornados.\u003C\/p\u003E\n\n\u003Cp\u003EVoc\u00EA pode executar v\u00E1rias fun\u00E7\u00F5es clicando no bot\u00E3o \u003Cstrong\u003EA\u00E7\u00F5es\u003C\/strong\u003E. Isso inclui a sele\u00E7\u00E3o de colunas que s\u00E3o exibidas\/ocultas e sua sequ\u00EAncia de exibi\u00E7\u00E3o, mais v\u00E1rios dados e fun\u00E7\u00F5es de formato. Tamb\u00E9m \u00E9 poss\u00EDvel definir views adicionais de dados usando a op\u00E7\u00E3o do gr\u00E1fico, agrupar por e tabela din\u00E2mica.\u003C\/p\u003E\n\n\u003Cp\u003ESe quiser salvar suas personaliza\u00E7\u00F5es, selecione o relat\u00F3rio ou clique em download para descarregar os dados. Informe seu endere\u00E7o de e-mail e per\u00EDodo de assinatura para que os dados sejam enviados regularmente.\u003Cp\u003E\n\n\u003Cp\u003EPara obter informa\u00E7\u00F5es adicionais, clique em Ajuda na parte inferior do menu A\u00E7\u00F5es.\u003C\/p\u003E\n\n\u003Cp\u003EClique no bot\u00E3o \u003Cstrong\u003ERedefinir\u003C\/strong\u003E para redefinir o relat\u00F3rio interativo para as configura\u00E7\u00F5es padr\u00E3o.\u003C\/p\u003E"
+  }
+ ,"Regions":[
+    {
+      "id":"122919423876045233"
+     ,"Identification":{
+        "Title":"Roles atribu\u00EDdas"
+       ,"Type":"Breadcrumb"
+      }
+     ,"Source":{
+        "Breadcrumb":"Breadcrumb (122603726361044904)"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Title Bar (122719492812044974)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-BreadcrumbRegion--useBreadcrumbTitle"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "Breadcrumb Template":"Breadcrumb (122781816620045014)"
+         ,"Template Options":[
+            "#DEFAULT#"
+          ]
+        }
+      }
+    }
+   ,{
+      "id":"123518167851624503"
+     ,"Identification":{
+        "Title":"Vw Gis Roles"
+       ,"Type":"Relat\u00F3rio Interativo"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"Table \/ View"
+       ,"Table Owner":"Parsing Schema"
+       ,"Table Name":"VW_GIS_ROLES_ATRIBUIDAS"
+       ,"Include ROWID Column":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (122679352814044958)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"123518276069624504"
+       ,"Link":{
+          "Link Column":"Exclude Link Column"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+         ,"Maximum Rows to Process":1000000
+        }
+       ,"Search Bar":{
+          "Include Search Bar":true
+         ,"Search Field":true
+         ,"Finder Drop Down":true
+         ,"Reports Select List":true
+         ,"Rows Per Page Selector":false
+        }
+       ,"Actions Menu":{
+          "Include Actions Menu":true
+         ,"Filter":true
+         ,"Select Columns":true
+         ,"Rows Per Page":true
+         ,"Sort":true
+         ,"Control Break":true
+         ,"Highlight":true
+         ,"Compute":true
+         ,"Aggregate":true
+         ,"Chart":true
+         ,"Group By":true
+         ,"Pivot":true
+         ,"Flashback":true
+         ,"Save Report":true
+         ,"Save Public Report":false
+         ,"Reset":true
+         ,"Help":true
+         ,"Download":true
+         ,"Subscription":true
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"123534991799862019"
+           ,"Identification":{
+              "Name":"Relat\u00F3rio Prim\u00E1rio"
+             ,"Alias":"1235350"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"123518346203624505"
+           ,"Identification":{
+              "Column Name":"ROLE"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Role"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":10
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"123518410717624506"
+           ,"Identification":{
+              "Column Name":"ROLE_ATRIBU\u00CDDA"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Role Atribu\u00EDda"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":20
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+        ]
+       ,"Printing":{
+          "Output":{
+            "View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"A4"
+           ,"Orientation":"Landscape"
+           ,"Units":"Millimeters"
+           ,"Width":297
+           ,"Height":210
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+           ,"Page Header Text":"Vw Gis Roles"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"121228394618132048"
+     ,"Identification":{
+        "Button Name":"CRIAR"
+       ,"Label":"Criar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Vw Gis Roles (123518167851624503)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-plus"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:8:\u0026SESSION.::\u0026DEBUG.:8::"
+         ,"Page":"8"
+         ,"Clear Cache":"8"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Security":{
+        "Authorization Scheme":"ADM_BD (123601292907091815)"
+      }
+    }
+   ,{
+      "id":"121228484288132049"
+     ,"Identification":{
+        "Button Name":"EXCLUIR"
+       ,"Label":"Excluir"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Vw Gis Roles (123518167851624503)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--danger"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-trash"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9:\u0026SESSION.::\u0026DEBUG.:9::"
+         ,"Page":"9"
+         ,"Clear Cache":"9"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Security":{
+        "Authorization Scheme":"ADM_BD (123601292907091815)"
+      }
+    }
+   ,{
+      "id":"121228557545132050"
+     ,"Identification":{
+        "Button Name":"ATRIBUIR_REVOGAR"
+       ,"Label":"Atribuir \/ Revogar role para role"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Vw Gis Roles (123518167851624503)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-gear"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:11:\u0026SESSION.::\u0026DEBUG.:11::"
+         ,"Page":"11"
+         ,"Clear Cache":"11"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Security":{
+        "Authorization Scheme":"ADM_BD (123601292907091815)"
+      }
+    }
+   ,{
+      "id":"122918638990045233"
+     ,"Identification":{
+        "Button Name":"RESET_REPORT"
+       ,"Label":"Redefinir"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"Vw Gis Roles (123518167851624503)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-undo-alt"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:3:\u0026APP_SESSION.::\u0026DEBUG.:RR::"
+         ,"Page":"3"
+         ,"Clear Cache":"RR"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+}

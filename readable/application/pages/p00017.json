@@ -1,0 +1,408 @@
+{
+  "id":"17"
+ ,"Identification":{
+    "Name":"Alterar primeira senha"
+   ,"Alias":"ALTERAR-PRIMEIRA-SENHA"
+   ,"Title":"Alterar primeira senha"
+   ,"Page Group":"Modais (128800547338567542)"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Login (122612946642044926)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":true
+   ,"List":"Do not show Navigation Menu List"
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"139404840849070930"
+     ,"Identification":{
+        "Title":"Altere sua senha."
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Cp align=center\u003EVoc\u00EA deve alterar sua senha no primeiro login.\u003C\/p\u003E"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Login (122665413690044952)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Login-region--headerTitle js-removeLandmark"
+         ,"t-Form--large"
+        ]
+       ,"Render Components":"Below Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"HTML"
+         ,"Expandir Atalhos":false
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"479791477216509178"
+     ,"Identification":{
+        "Name":"P17_USUARIO"
+       ,"Type":"Somente Exibi\u00E7\u00E3o"
+      }
+     ,"Label":{
+        "Label":"Usu\u00E1rio"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Formato":"Plain Text"
+       ,"Com Base Em":"Item Value"
+       ,"Mostrar Quebras de Linha":true
+       ,"Enviar ao Submeter P\u00E1gina":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Altere sua senha. (139404840849070930)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (122777734067045010)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-user"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Default":{
+        "Type":"Static"
+       ,"Static Value":"\u0026APP_USER."
+      }
+     ,"Session State":{
+        "Data Type":"VARCHAR2"
+       ,"Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"479791717890509180"
+     ,"Identification":{
+        "Name":"P17_SENHA"
+       ,"Type":"Senha"
+      }
+     ,"Label":{
+        "Label":"Senha"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Submeter ao pressionar Enter":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Altere sua senha. (139404840849070930)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+        ]
+       ,"Icon":"fa-lg fa-key"
+       ,"Width":30
+       ,"Value Placeholder":"Nova senha"
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":30
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"54456468154531703924"
+     ,"Identification":{
+        "Name":"P17_CONFIRMAR_SENHA"
+       ,"Type":"Senha"
+      }
+     ,"Label":{
+        "Label":"Confirmar senha"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Submeter ao pressionar Enter":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Altere sua senha. (139404840849070930)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (122779078329045011)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form-fieldContainer--xlarge"
+         ,"margin-bottom-md"
+        ]
+       ,"Icon":"fa-lg fa-key"
+       ,"Width":30
+       ,"Value Placeholder":"Repita a nova senha"
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":30
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+      }
+     ,"Session State":{
+        "Storage":"Per Session (Persistent)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"154319075055834963"
+     ,"Identification":{
+        "Button Name":"ALTERAR"
+       ,"Label":"Alterar"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Altere sua senha. (139404840849070930)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Left center"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (122780255320045013)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--pillStart"
+         ,"t-Button--stretch"
+         ,"t-Button--gapTop"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL UPDATE action"
+      }
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"154320860107834984"
+     ,"Identification":{
+        "Name":"Senha igual"
+      }
+     ,"Execution":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"Expression"
+       ,"Language":"SQL"
+       ,"SQL Expression":":P17_SENHA = :P17_CONFIRMAR_SENHA OR :P17_CONFIRMAR_SENHA IS NULL"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"As senhas s\u00E3o diferentes."
+       ,"Display Location":"Inline with Field"
+       ,"Associated Item":"P17_CONFIRMAR_SENHA (54456468154531703924)"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"139404732541070929"
+     ,"Identification":{
+        "Name":"Registrar que a senha foi alterada"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"UPDATE usuarios_primeiro_login\nSET primeiro_login = \u0027N\u0027\nWHERE usuario = :APP_USER;"
+      }
+     ,"Execution":{
+        "Sequence":30
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"154321575975834988"
+     ,"Identification":{
+        "Name":"Encerrar sess\u00E3o"
+       ,"Type":"Limpar Estado da Sess\u00E3o"
+       ,"Execution Chain":"None"
+      }
+     ,"Settings":{
+        "Tipo":"Clear all Items on the Current Page"
+      }
+     ,"Execution":{
+        "Sequence":40
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"154321918139834989"
+     ,"Identification":{
+        "Name":"Atualizar senha"
+       ,"Type":"Executar C\u00F3digo"
+       ,"Execution Chain":"None"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_acao VARCHAR2(20);\nBEGIN\n    v_acao := \u0027Alterar senha\u0027;\n    LOG_INSERT(:APP_USER, v_acao, \u0027INFO\u0027, (\u0027Tentativa de altera\u00E7\u00E3o de senha do usu\u00E1rio \u0027 || \u0027\"\u0027 || UPPER(:APP_USER) || \u0027\" pela primeira vez.\u0027));\n    \n    BEGIN\n        pk_gis.alterar_senha(:APP_USER, :P17_CONFIRMAR_SENHA);\n        \n        v_status := \u0027SUCESSO\u0027;\n        v_mensagem := \u0027Senha alterada com sucesso pela primeira vez.\u0027;\n    EXCEPTION\n        WHEN OTHERS THEN\n            v_status := \u0027ERRO\u0027;\n            v_mensagem := \u0027Erro - \u0027 || SQLERRM;\n            \n            LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\n            \n            RAISE;\n    END;\n\n    LOG_INSERT(:APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+      }
+     ,"Execution":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Senha alterada com sucesso."
+      }
+     ,"Error":{
+        "Error Message":"Erro: n\u00E3o foi poss\u00EDvel alterar a senha."
+       ,"Display Location":"Inline in Notification"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"154323978171834997"
+     ,"Identification":{
+        "Name":"Ir para login"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9999:\u0026SESSION.::\u0026DEBUG.:::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"9999"
+        }
+      }
+    }
+  ]
+}

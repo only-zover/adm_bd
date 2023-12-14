@@ -1,0 +1,571 @@
+{
+  "id":"16"
+ ,"Identification":{
+    "Name":"Logs"
+   ,"Alias":"LOGS"
+   ,"Title":"Logs"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "DECLARE\n    v_status VARCHAR2(20);\n    v_mensagem VARCHAR2(4000);\n    v_acao VARCHAR2(20);\n    v_teste BOOLEAN;\nBEGIN\n    v_acao "
+     ,"= \u0027Login\u0027;\n    \n    IF "
+     ,"APP_USER = \u0027nobody\u0027 THEN\n        v_mensagem "
+     ,"= \u0027Erro"
+     ," n\u00E3o foi poss\u00EDvel realizar o login.\u0027;\n        v_status "
+     ,"= \u0027ERRO\u0027;\n    ELSE\n        v_status "
+     ,"= \u0027SUCESSO\u0027;\n        v_mensagem "
+     ,"= \u0027Login realizado com sucesso.\u0027;\n    END IF;\n\n    LOG_INSERT(\u0027Desconhecido\u0027, v_acao, \u0027INFO\u0027, (\u0027Tentativa de login com nome \u0027 || UPPER("
+     ,"P9999_USERNAME)));\n    LOG_INSERT("
+     ,"APP_USER, v_acao, v_status, v_mensagem);\nEND;"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"139401977200070901"
+     ,"Identification":{
+        "Title":"Logs"
+       ,"Type":"Relat\u00F3rio Interativo"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"Table \/ View"
+       ,"Table Owner":"Parsing Schema"
+       ,"Table Name":"LOGS_INTERFACE_BD"
+       ,"Include ROWID Column":false
+       ,"Order By Clause":"TO_TIMESTAMP(DATA, \u0027YYYY.MM.DD HH24:MI:SS.FF4\u0027) DESC"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (122679352814044958)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"139402090328070902"
+       ,"Link":{
+          "Link Column":"Exclude Link Column"
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y"
+         ,"Display Position":"Bottom - Right"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+         ,"Maximum Rows to Process":1000000
+        }
+       ,"Messages":{
+          "When No Data Found":"Nenhum registro encontrado."
+        }
+       ,"Search Bar":{
+          "Include Search Bar":true
+         ,"Search Field":true
+         ,"Finder Drop Down":true
+         ,"Reports Select List":true
+         ,"Rows Per Page Selector":false
+        }
+       ,"Actions Menu":{
+          "Include Actions Menu":true
+         ,"Filter":true
+         ,"Select Columns":true
+         ,"Rows Per Page":true
+         ,"Sort":true
+         ,"Control Break":true
+         ,"Highlight":true
+         ,"Compute":true
+         ,"Aggregate":true
+         ,"Chart":true
+         ,"Group By":true
+         ,"Pivot":true
+         ,"Flashback":true
+         ,"Save Report":true
+         ,"Save Public Report":false
+         ,"Reset":true
+         ,"Help":true
+         ,"Download":true
+         ,"Subscription":true
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"139317075758389752"
+           ,"Identification":{
+              "Name":"Relat\u00F3rio Prim\u00E1rio"
+             ,"Alias":"1393171"
+            }
+          }
+        ]
+       ,"Columns":[
+          {
+            "id":"139402132144070903"
+           ,"Identification":{
+              "Column Name":"ID"
+             ,"Type":"Coluna Oculta"
+            }
+           ,"Heading":{
+              "Heading":"Id"
+            }
+           ,"Layout":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Primary Key":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"139402232903070904"
+           ,"Identification":{
+              "Column Name":"DATA"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Data e Hora"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":20
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"139402315789070905"
+           ,"Identification":{
+              "Column Name":"USUARIO"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Usu\u00E1rio"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":30
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"139402411453070906"
+           ,"Identification":{
+              "Column Name":"IP"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"IP"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":40
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"139402523173070907"
+           ,"Identification":{
+              "Column Name":"ACAO"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"A\u00E7\u00E3o"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":50
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"139402627335070908"
+           ,"Identification":{
+              "Column Name":"STATUS"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Status"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":60
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+         ,{
+            "id":"139402709309070909"
+           ,"Identification":{
+              "Column Name":"MENSAGEM"
+             ,"Type":"Texto sem Formata\u00E7\u00E3o"
+            }
+           ,"Heading":{
+              "Heading":"Mensagem"
+             ,"Alignment":"start"
+            }
+           ,"Single Row View":{
+              "Use Column Heading":true
+            }
+           ,"Layout":{
+              "Sequence":70
+             ,"Column Alignment":"start"
+            }
+           ,"Accessibility":{
+              "Value Identifies Row":false
+            }
+           ,"Source":{
+              "Primary Key":false
+            }
+           ,"Column Filter":{
+              "Type":"Default Based on Column Type"
+            }
+           ,"Enable Users To":{
+              "Hide":true
+             ,"Sort":true
+             ,"Filter":true
+             ,"Highlight":true
+             ,"Control Break":true
+             ,"Aggregate":true
+             ,"Compute":true
+             ,"Chart":true
+             ,"Group By":true
+             ,"Pivot":true
+            }
+           ,"Security":{
+              "Escape special characters":true
+            }
+          }
+        ]
+       ,"Printing":{
+          "Output":{
+            "View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"A4"
+           ,"Orientation":"Landscape"
+           ,"Units":"Millimeters"
+           ,"Width":297
+           ,"Height":210
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+           ,"Page Header Text":"Logs"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+    }
+   ,{
+      "id":"155213280936114631"
+     ,"Identification":{
+        "Title":"Breadcrumb"
+       ,"Type":"Breadcrumb"
+      }
+     ,"Source":{
+        "Breadcrumb":"Breadcrumb (122603726361044904)"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Title Bar (122719492812044974)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-BreadcrumbRegion--useBreadcrumbTitle"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "Breadcrumb Template":"Breadcrumb (122781816620045014)"
+         ,"Template Options":[
+            "#DEFAULT#"
+          ]
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"138605257661204916"
+     ,"Identification":{
+        "Button Name":"RESET_REPORT"
+       ,"Label":"Redefinir"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Logs (139401977200070901)"
+       ,"Position":"RIGHT_OF_IR_SEARCH_BAR"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (122780333532045013)"
+       ,"Hot":false
+       ,"Template Options":[
+          "t-Button--large"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-undo-alt"
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:16:\u0026SESSION.::\u0026DEBUG.:RR,::"
+         ,"Page":"16"
+         ,"Clear Cache":"RR"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+}

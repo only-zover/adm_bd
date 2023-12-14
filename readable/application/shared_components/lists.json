@@ -1,0 +1,476 @@
+[
+  {
+    "id":"122604265650044908"
+   ,"Identification":{
+      "Name":"Menu de Navega\u00E7\u00E3o"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"122899617644045157"
+       ,"Label":{
+          "Label":"In\u00EDcio"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-home"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:1:\u0026APP_SESSION.::\u0026DEBUG.:::"
+           ,"Page":"1"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"122901139716045159"
+       ,"Label":{
+          "Label":"Usu\u00E1rios"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:2:\u0026APP_SESSION.::\u0026DEBUG.:::"
+           ,"Page":"2"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"122913817337045171"
+       ,"Label":{
+          "Label":"Roles e atribui\u00E7\u00F5es"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-wrench"
+        }
+       ,"Layout":{
+          "Sequence":30
+         ,"Parent Entry":"Roles (125900586480766434)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:3:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"3"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"123805418493514624"
+       ,"Label":{
+          "Label":"Usu\u00E1rios e privil\u00E9gios"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-wrench"
+        }
+       ,"Layout":{
+          "Sequence":40
+         ,"Parent Entry":"Roles (125900586480766434)"
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "15"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:15:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"15"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"125900586480766434"
+       ,"Label":{
+          "Label":"Roles"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-gear"
+         ,"Alt Attribute":"title=\"#LIST_LABEL#"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"133318976996412284"
+       ,"Label":{
+          "Label":"Logs"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-clipboard-list"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "16"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:16:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"16"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"162000746696592000"
+       ,"Label":{
+          "Label":"Teste de Estresse"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-emoji-angry"
+        }
+       ,"Layout":{
+          "Sequence":60
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "20"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:20:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"20"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Security":{
+          "Authorization Scheme":"ADM_BD (123601292907091815)"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"122888022986045117"
+   ,"Identification":{
+      "Name":"Barra de Navega\u00E7\u00E3o"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"122461984120566233"
+       ,"Label":{
+          "Label":"Alterar senha"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-key"
+         ,"Alt Attribute":"Alterar senha"
+        }
+       ,"Layout":{
+          "Sequence":30
+         ,"Parent Entry":"\u0026APP_USER. (122928598905045264)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:7:\u0026SESSION.::\u0026DEBUG.:7:::"
+           ,"Page":"7"
+           ,"Clear Cache":"7"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"User is Authenticated (not public)"
+        }
+      }
+     ,{
+        "id":"122928598905045264"
+       ,"Label":{
+          "Label":"\u0026APP_USER."
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"#"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"2.":"has-username"
+        }
+      }
+     ,{
+        "id":"122928919022045264"
+       ,"Label":{
+          "Label":"---"
+        }
+       ,"Layout":{
+          "Sequence":20
+         ,"Parent Entry":"\u0026APP_USER. (122928598905045264)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"separator"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"User is Authenticated (not public)"
+        }
+      }
+     ,{
+        "id":"122929308775045265"
+       ,"Label":{
+          "Label":"Sair"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-sign-out"
+        }
+       ,"Layout":{
+          "Sequence":40
+         ,"Parent Entry":"\u0026APP_USER. (122928598905045264)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"\u0026LOGOUT_URL."
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"User is Authenticated (not public)"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"122927049068045261"
+   ,"Identification":{
+      "Name":"Navega\u00E7\u00E3o por P\u00E1gina"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"122927401840045262"
+       ,"Label":{
+          "Label":"Usu\u00E1rios"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:2:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"2"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"122927850620045262"
+       ,"Label":{
+          "Label":"Roles Atribu\u00EDdas"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-wrench"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:3:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"3"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"126021770001796585"
+       ,"Label":{
+          "Label":"Roles e Privilegiados"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-wrench"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:15:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"15"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"126033044543157308"
+       ,"Label":{
+          "Label":"Alterar Senha"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-key"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:7:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"7"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"138575272616208616"
+       ,"Label":{
+          "Label":"Logs"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-clipboard-list"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:16:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"16"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+]

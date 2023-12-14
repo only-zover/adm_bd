@@ -1,0 +1,173 @@
+{
+  "id":"1"
+ ,"Identification":{
+    "Name":"In\u00EDcio"
+   ,"Alias":"HOME"
+   ,"Title":"In\u00EDcio"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"JavaScript":{
+    "Function and Global Variable Declaration":"console.log(apex.item(\u0027P1_FIRST_LOGIN\u0027).getValue())"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"122900564012045159"
+     ,"Identification":{
+        "Title":"Usu\u00E1rio atual:"
+       ,"Type":"Conte\u00FAdo Est\u00E1tico"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Ch1 style=\"padding: 0; margin: 0; color: #056ac8; text-transform: lowercase;\"\u003E\u0026APP_USER.\u003C\/h1\u003E"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_01"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Alert (122635226969044936)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Alert--horizontal"
+         ,"t-Alert--defaultIcons"
+         ,"t-Alert--info"
+         ,"js-headingLevel-1"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Formato do Relat\u00F3rio":"HTML"
+         ,"Expandir Atalhos":false
+        }
+      }
+    }
+   ,{
+      "id":"122928139520045263"
+     ,"Identification":{
+        "Title":"Navega\u00E7\u00E3o por P\u00E1gina"
+       ,"Type":"Lista"
+      }
+     ,"Source":{
+        "List":"Navega\u00E7\u00E3o por P\u00E1gina (122927049068045261)"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (122640472590044942)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "List Template":"Cards (122768251258045004)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"u-colors"
+           ,"t-Cards--featured force-fa-lg"
+           ,"t-Cards--displayIcons"
+           ,"t-Cards--cols"
+           ,"t-Cards--hideBody"
+           ,"t-Cards--animColorFill"
+          ]
+        }
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"139404582210070927"
+     ,"Identification":{
+        "Name":"Redirecionar para p\u00E1gina de altera\u00E7\u00E3o de senha pela primeira vez"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Before Header"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:17:\u0026SESSION.::\u0026DEBUG.:::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"17"
+        }
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT NULL\nFROM usuarios_primeiro_login\nWHERE usuario = :APP_USER\nAND primeiro_login = \u0027S\u0027;"
+      }
+    }
+  ]
+}

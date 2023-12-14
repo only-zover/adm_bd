@@ -1,0 +1,38 @@
+[
+  {
+    "id":"122891632009045134"
+   ,"Identification":{
+      "Name":"Direitos de Administra\u00E7\u00E3o"
+    }
+   ,"Authorization Scheme":{
+      "Type":"Fun\u00E7\u00E3o PL\/SQL que Retorna Booleano"
+    }
+   ,"Settings":{
+      "Corpo da Fun\u00E7\u00E3o PL\/SQL":"return true;"
+    }
+   ,"Server Cache":{
+      "Evaluation Point":"Once per Page View"
+    }
+   ,"Error":{
+      "Error Message":"Privil\u00E9gios insuficientes; o usu\u00E1rio n\u00E3o \u00E9 um Administrador"
+    }
+  }
+ ,{
+    "id":"123601292907091815"
+   ,"Identification":{
+      "Name":"ADM_BD"
+    }
+   ,"Authorization Scheme":{
+      "Type":"Consulta SQL Existe"
+    }
+   ,"Settings":{
+      "Consulta SQL":"SELECT null\r\nFROM dba_role_privs\r\nWHERE grantee = UPPER(:APP_USER)\r\nAND granted_role = \u0027RL_GIS_APEX_ADM\u0027;"
+    }
+   ,"Server Cache":{
+      "Evaluation Point":"Once per Session"
+    }
+   ,"Error":{
+      "Error Message":"Erro de seguran\u00E7a."
+    }
+  }
+]
